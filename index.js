@@ -4,7 +4,9 @@ if (!process.env.BOT_TOKEN) {
   process.exit(1);
 }
 const Botkit = require('botkit');
-const controller = Botkit.slackbot();
+const controller = Botkit.slackbot({
+  json_file_store: './db'
+});
 const bot = controller.spawn({
   token: process.env.BOT_TOKEN
 });

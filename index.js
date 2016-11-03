@@ -11,6 +11,9 @@ const bot = controller.spawn({
   token: process.env.BOT_TOKEN
 });
 
+const newsNow = require('./lib/news-now');
+newsNow.init(controller);
+
 controller.hears('hello', ['direct_message', 'direct_mention'], (bot, message) => {
   bot.reply(message, 'hello!');
 });

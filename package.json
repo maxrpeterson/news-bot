@@ -1,0 +1,24 @@
+{
+  "name": "news-bot",
+  "version": "0.1.0",
+  "description": "News subscription slack bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.iaccap.com:7999/slac/news-bot.git"
+  },
+  "keywords": [
+    "news",
+    "slack",
+    "bot",
+    "slackbot"
+  ],
+  "author": "Max Peterson",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "^0.4.0"
+  }
+}

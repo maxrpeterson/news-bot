@@ -15,6 +15,9 @@ controller.hears('hello', ['direct_message', 'direct_mention'], (bot, message) =
   bot.reply(message, 'hello!');
 });
 
+const scheduler = require('./lib/scheduler');
+scheduler.start(controller);
+
 bot.startRTM((err, bot, payload) => {
   if (err) {
     console.error(err);
